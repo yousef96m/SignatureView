@@ -399,9 +399,6 @@ public class SignatureView extends View {
      *
      * @return String
      */
-    public String getVersionName() {
-        return BuildConfig.VERSION_NAME;
-    }
 
     @Override
     public Parcelable onSaveInstanceState() {

@@ -1,5 +1,6 @@
 package com.kyanogen.signature;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -7,16 +8,16 @@ import android.graphics.Bitmap;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Build;
-import android.os.Environment;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.kyanogen.signatureview.*;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
+import com.kyanogen.signatureview.SignatureView;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -134,7 +135,7 @@ public class Signature extends AppCompatActivity {
     public void InfoDialog() {
         String infoMessage = "App version : " + BuildConfig.VERSION_NAME;
         infoMessage = infoMessage + "\n\n" + "SignatureView library version : " +
-                com.kyanogen.signatureview.BuildConfig.VERSION_NAME;
+                "111";
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.vInfo)
                 .setMessage(infoMessage)
