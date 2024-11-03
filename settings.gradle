@@ -20,4 +20,5 @@ dependencyResolutionManagement {
     }
 }
 
-include 'SignatureView-Example', 'signature-view'
+include 'SignatureView-Example'
+include 'signature-view'

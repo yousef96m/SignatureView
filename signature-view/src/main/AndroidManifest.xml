@@ -1,7 +1,1 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.kyanogen.signatureview">
-
-    <application android:allowBackup="true">
-    </application>
-
-</manifest>
+<manifest />
